@@ -1,0 +1,35 @@
+adobe acrobat dc
+google chrome
+vscode
+microsoft office
+anydask
+docker
+firefox
+naver whale
+putty
+spotify
+notion
+Everything
+espanso
+flow launcher
+bitwarden
+teamviewer
+anki
+insomnia
+dbeaver
+notepad++
+photoshop
+qbittorent
+honeygain
+virtualbox
+steam
+obs
+discord
+mpc
+vlc
+postgres
+irfanview
+git
+7zip
+node
+quicklook

@@ -33,3 +33,45 @@ git
 7zip
 node
 quicklook
+
+
+2023.01.29
+7zip
+adobe acrobat dc
+photoshop
+anki
+anydask
+bitwarden
+dbeaver
+discord
+docker
+epic games
+everything?
+figma
+flow launcher
+git
+chromehoneygain
+insomniaintellij
+irfanview
+itunes
+jetbrains toolbox
+office
+vscode
+visual studio
+firefox
+mpc
+naver
+notepad++
+notion
+obs
+obsidian
+virtual box
+postgres
+power toys
+putty
+qbittorent
+spotify
+steam
+tabby
+teamviewer
+vlc

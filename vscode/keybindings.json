@@ -1,0 +1,9 @@
+[
+    { "key": "ctrl+n", "command": "extension.advancedNewFile" },
+    { "key": "ctrl+alt+n", "command": "-extension.advancedNewFile" },
+    { "key": "ctrl+enter", "command": "-github.copilot.generate", "when": "editorTextFocus && github.copilot.activated" },
+    { "key": "tab", "command": "tab", "when": "editorTextFocus && !editorTabMovesFocus" },
+    { "key": "shift+tab", "command": "outdent", "when": "editorTextFocus && !editorTabMovesFocus" },
+    { "key": "ctrl+alt+`", "command": "workbench.action.terminal.kill" },
+    { "key": "ctrl+n", "command": "explorer.newFile" }
+]

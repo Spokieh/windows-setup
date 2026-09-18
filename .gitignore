@@ -1,0 +1,14 @@
+# Local/editor state
+.vscode/
+**/node_modules/
+**/lazy-lock.json.tmp
+
+# Secrets and machine-local exports
+*.env
+*.key
+*.pem
+*.pfx
+*.pub
+
+# Neovim runtime data
+nvim-data/

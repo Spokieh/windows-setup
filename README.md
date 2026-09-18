@@ -14,14 +14,14 @@ Minimal, reproducible configuration for my Windows 11 development environment. I
 1. Install Windows 11 updates and ensure App Installer/winget is available.
 2. Clone this repository.
 3. Run `pwsh -ExecutionPolicy Bypass -File .\setup.ps1`.
-4. Run with `-Force` only when you intentionally want to replace existing profile/editor files.
+4. Existing profile, VS Code, and Neovim configuration is skipped with a warning. Use `-Force` only when you intentionally want to replace it; the script first creates a timestamped backup of each existing file or the Neovim directory.
 5. Restart PowerShell and VS Code. Open Windows Terminal settings and review/apply `windows-terminal/settings.json` manually.
 
-The script installs the selected winget packages, CurrentUser PowerShell modules, and the global `tree-sitter-cli` npm package. It copies the profile, VS Code settings/keybindings, and Neovim configuration. Existing files are skipped unless `-Force` is supplied; the script does not make automatic backups.
+The script installs the selected winget packages, CurrentUser PowerShell modules, and the global `tree-sitter-cli` npm package. It copies the profile, VS Code settings/keybindings, and Neovim configuration. When the `code` command is available, it also restores extensions from `vscode/extensions.txt`; otherwise it prints a warning and continues. Existing configuration is skipped by default. With `-Force`, timestamped backups are created before existing files or the Neovim configuration directory are replaced.
 
 ## Fonts and extensions
 
-JetBrainsMono Nerd Font was installed with Oh My Posh's font installer. It is documented here rather than forced through winget. Restore VS Code extensions with `code --install-extension <id>` for each line in `vscode/extensions.txt` (or use the Extensions UI). The live machine currently lacks `pascalreitermann93.vscode-yaml-sort`; it remains listed because it is part of the intended setup.
+JetBrainsMono Nerd Font was installed with Oh My Posh's font installer. It is documented here rather than forced through winget. VS Code extensions are restored automatically when `code` is available; if it is unavailable, setup continues with a warning and extensions can be installed manually. The live machine currently lacks `pascalreitermann93.vscode-yaml-sort`; it remains listed because it is part of the intended setup.
 
 ## Neovim
 
